@@ -30,6 +30,7 @@ app = Flask(__name__)
 
 app.register_blueprint(workflow, url_prefix="/workflow")
 
+
 ## TODO: Implement caching for the swagger file content (no need to load it everytime)
 @app.route("/handle", methods=["POST", "OPTIONS"])
 def handle():
